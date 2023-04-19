@@ -165,4 +165,7 @@ public class UserController {
 
 	@GetMapping("/user/location")
 	public String location(){ return "user/location";}
+
+	@GetMapping("/board/main")
+	public String main() { return "/board/main";}
 }

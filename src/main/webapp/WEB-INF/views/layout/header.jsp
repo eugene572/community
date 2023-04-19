@@ -21,8 +21,8 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<a class="navbar-brand" href="/">Cos</a>
+	<nav class="navbar navbar-expand-md bg-white navbar-white">
+		<a class="navbar-brand" href="/board/main"><img src="/image/pet1.png" height="85" width="85"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -31,17 +31,16 @@
 			<c:choose>
 				<c:when test="${empty principal}">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" href="/auth/loginForm">로그인</a></li>
-						<li class="nav-item"><a class="nav-link" href="/auth/joinForm">회원가입</a></li>
-						<li class="nav-item"><a class="nav-link" href="/board/location">보호소 위치</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/auth/loginForm">로그인</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/auth/joinForm">회원가입</a></li>
 					</ul>
 				</c:when>
 				<c:otherwise>
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" href="/board/saveForm">글쓰기</a></li>
-						<li class="nav-item"><a class="nav-link" href="/user/updateForm">회원정보</a></li>
-						<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a></li>
-						<li class="nav-item"><a class="nav-link" href="/board/location">보호소 위치</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/saveForm">글쓰기</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/user/updateForm">회원정보</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/logout">로그아웃</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/location">보호소 위치</a></li>
 					</ul>
 				</c:otherwise>
 			</c:choose>
