@@ -15,7 +15,7 @@
 		</div>
 		
 		<div style="text-align: center;">
-		    <button id="btn-login" class="btn btn-primary" style="width:300px; height:50px;">로그인</button>
+		    <button id="btn-login" class="btn btn-dark" style="width:300px; height:50px;">로그인</button>
 		</div>
 
 		<a style="text-align: center;" href="https://kauth.kakao.com/oauth/authorize?client_id=42650e8bb8a5013a67136052a4291283&redirect_uri=http://localhost:8000/auth/kakao/callback&response_type=code"><img height = "50px" width = "300px" src="/image/kakao.png" /></a>

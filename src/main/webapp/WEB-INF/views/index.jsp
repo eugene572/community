@@ -4,6 +4,8 @@
 <head>
 <%@ include file="layout/header.jsp"%>
 </head>
+<body>
+
 <div class="container">
 
 	<div class="card m-2">
@@ -20,7 +22,7 @@
 		        <c:forEach var="board" items="${boards.content}">
 		        <tr>
 		            <td style="text-align:center;">${board.id}</td>
-		            <td><a style="text-decoration: none; color: black;"href="/board/${board.id}">${board.title}</td>
+		            <td><a style="text-decoration: none; color: black;" href="/board/${board.id}">${board.title}</td>
 		            <td style="text-align:center;">${board.user.username}</td>
 		        </tr>
 			    <%--<h4 class="card-title"><a style="text-decoration: none; color: black;"href="/board/${board.id}">${board.title}</h4>--%>
@@ -54,7 +56,7 @@
 	
 
 </div>
-
+</body>
 
 
 

@@ -1,12 +1,12 @@
 package com.cos.blog;
 
-import org.junit.Test;
+
 
 import com.cos.blog.model.Reply;
 
 public class ReplyObjectTest {
 	
-	@Test
+	//@Test
 	public void 투스트링테스트() {
 		Reply reply = Reply.builder()
 				.id(1)

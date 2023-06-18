@@ -9,14 +9,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Cos 블로그</title>
+<title>동물 보호소</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="/js/style.css">
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 </head>
@@ -37,10 +38,13 @@
 				</c:when>
 				<c:otherwise>
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/saveForm">글쓰기</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/saveForm">작성하기</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/">소식보기</a></li>
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/user/updateForm">회원정보</a></li>
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/logout">로그아웃</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/location">보호소 위치</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/location">보호소 위치/시설</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/messageMain">쪽지</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/messageForm">자세히</a></li>
 					</ul>
 				</c:otherwise>
 			</c:choose>

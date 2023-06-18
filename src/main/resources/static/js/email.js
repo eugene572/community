@@ -1,0 +1,162 @@
+input {
+  width: 300px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+textarea {
+  width: 300px;
+  height: 300px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  padding-top:10px;
+  background-color: rgb(233, 233, 233);
+}
+.container{
+    /*vertical-align:middle;*/
+}
+
+.arrow_box {
+  display: none;
+  position: absolute;
+  width: 80px;
+  padding: 8px;
+  left: 0;
+  margin-left: 80px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 10px;
+}
+
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
+button:hover + p.arrow_box {
+  display: block;
+}
+
+.table tr td.space{
+    padding: 10px 0;
+    border:none;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.intro .main_body{
+    flex:1;
+    text-align:center;
+    margin:150px 40px;
+}
+
+.intro .main_body i{
+    font-size: 70px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.intro .main_body h1{
+    /*letter-spacing: 0.2em;*/
+}
+
+.intro .main_body p{
+    font-size:10px;
+}
+/* */
+.service{background : #ddd;}
+
+.service .container{
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    max-width:1000px;
+    margin:auto;
+}
+
+.service .img{
+    height: 300px;
+}
+
+.service .img img{
+    height: 100%;
+    width:auto;
+}
+
+.service .text{
+    text-align:end;
+    color:#444;
+    padding-left:100px;
+}
+
+.service .text h1{
+    letter-spacing: 0.1em;
+}
+
+.service .text p{
+    word-wrap: break-word;
+    word-break: keep-all;
+    font-size:12px;
+}
+/* */
+.service2{background :  #ddd;}
+
+.service2 .container2{
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    max-width:1000px;
+    margin:auto;
+}
+
+.service2 .img{
+    height: 300px;
+}
+
+.service2 .img img{
+    height: 100%;
+    width:auto;
+}
+
+.service2 .text{
+    text-align:start;
+    color:#444;
+    padding-left:100px;
+}
+
+.service2 .text h1{
+    letter-spacing: 0.2em;
+}
+
+.service2 .text p{
+    word-wrap: break-word;
+    word-break: keep-all;
+    font-size:12px;
+}

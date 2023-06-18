@@ -51,6 +51,7 @@ public class UserController {
 		return "user/loginForm";
 	}
 
+
 	@JsonIgnoreProperties(ignoreUnknown=true)
 	@GetMapping("/auth/kakao/callback")
 	public String kakaoCallback(String code) { // Data를 리턴해주는 컨트롤러 함수
@@ -167,5 +168,8 @@ public class UserController {
 	public String location(){ return "user/location";}
 
 	@GetMapping("/board/main")
-	public String main() { return "/board/main";}
+	public String main() { return "board/main";}
+
+	@GetMapping("/board/messageSave")
+	public String messageSave() { return "board/messageSave";}
 }

@@ -13,7 +13,7 @@
 			<textarea class="form-control summernote" rows="5" id="content"></textarea>
 		</div>
 	</form>
-	<button id="btn-save" class="btn btn-primary float-right">작성하기</button>
+	<button id="btn-save" class="btn btn-dark float-right">작성하기</button>
 </div>
 
 <script>
