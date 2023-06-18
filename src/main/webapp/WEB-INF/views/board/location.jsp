@@ -25,7 +25,7 @@
     </style>
     </head>
     <body>
-<div id="map" style="width:800px;height:600px; display: table; margin-left: auto; margin-right: auto; "></div>
+<div id="map" style="width:1000px;height:800px; display: table; margin-left: auto; margin-right: auto; "></div>
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f77d7afbd9a21da9048880826e1436b8"></script>
 
@@ -44,7 +44,7 @@
     var container = document.getElementById('map');
     var options = {
     	center: new kakao.maps.LatLng(37.3402538780, 126.8700052143),
-    	level: 13
+    	level: 11
     };
 
     var map = new kakao.maps.Map(container, options);
@@ -64,7 +64,7 @@ var positions = [
                             '            <div class="desc">' +
                             '                <div class="ellipsis" onclick=popup()>인천광역시 계양구 장제로 923 (병방동)</div>' +
                             '                <div class="jibun ellipsis">(우) 63309 (지번) 영평동 2181</div>' +
-                            '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                            '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                             '                <div onclick="popup()">문자 전송하기</div>' +
                             '            </div>' +
                             '        </div>' +
@@ -86,7 +86,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라북도 전주시 덕진구 인후동1가 928-1</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 영평동 2181</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -107,7 +107,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -128,7 +128,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>경상남도 양산시 동면 석산리 392 양산시농업기술센터</div>' +
                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 392 양산시농업기술센터</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -149,7 +149,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>강원도 양양군 손양면 동막골길 115-35 </div>' +
                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 삽존리 13</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -170,7 +170,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>경기도 양평군 양평읍 농업기술센터길 59-1</div>' +
                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 공흥리 1-1</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -191,7 +191,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>서울특별시 용산구 원효로2가 84-10</div>' +
                               '                <div class="jibun ellipsis">(우) 84-10 (지번) 원리 90</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -212,7 +212,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>경상북도 영덕군 영덕읍 구미2길 14-1 (영덕읍) 영덕군유기동물보호센터</div>' +
                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 구미리 22</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -233,7 +233,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -254,7 +254,7 @@ var positions = [
                               '            <div class="desc">' +
                               '                <div class="ellipsis" onclick=popup()>경상북도 영주시 장수면 반구로 143 [*미고시] 영주시동물보호센터</div>' +
                               '                <div class="jibun ellipsis">(우) 407-8 (지번) 원리 90</div>' +
-                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                               '                <div onclick="popup()">문자 전송하기</div>' +
                               '            </div>' +
                               '        </div>' +
@@ -275,7 +275,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -296,7 +296,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경상북도 영천시 천문로 622-13 (오미동, 영천시농업기술센터)</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 오미동 1147-1</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -317,7 +317,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경상북도 예천군 예천읍 충효로 632-84 (예천읍, 유기동물보호소)</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -338,7 +338,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>전라북도 완주군 용진읍 순지2길 187-6</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 신지리 산31-2</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -359,7 +359,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경기도 용인시 처인구 중부대로 1074-1 (삼가동) 용인시 동물보호센터</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 삼가동 164</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -380,7 +380,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>인천광역시 서구 서곶로 349 (연희동) 우리동물병원</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -401,7 +401,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경상북도 군위군 군위읍 중앙1길 17 (군위읍) </div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 서부리 151-31</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -421,7 +421,7 @@ var positions = [
                                                   '            <div class="desc">' +
                                                   '                <div class="ellipsis" onclick=popup()>경상북도 울릉군 울릉읍 신리길 68 (울릉읍, 울릉도축장)</div>' +
                                                   '                <div class="jibun ellipsis">(우) 928-1 (지번) 사동리 714-2</div>' +
-                                                  '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                                  '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                                   '                <div onclick="popup()">문자 전송하기</div>' +
                                                   '            </div>' +
                                                   '        </div>' +
@@ -441,7 +441,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>울산광역시 울주군 온양읍 화산발리로 543</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 발리 1144</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -461,7 +461,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>울산광역시 울주군 온양읍 화산발리로 543 (온양읍)</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -481,7 +481,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>울산광역시 울주군 온양읍 화산발리로 543 (온양읍)</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -501,7 +501,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경상북도 울진군 울진읍 대흥신림로 916-37 </div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 고성리 864-7</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -521,7 +521,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>강원도 원주시 호저면 칠봉로 110-6</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -541,7 +541,7 @@ var positions = [
                                               '            <div class="desc">' +
                                               '                <div class="ellipsis" onclick=popup()>경상북도 안동시 서후면 풍산태사로 3252-29 (서후면)</div>' +
                                               '                <div class="jibun ellipsis">(우) 928-1 (지번) 태장리 201-1s</div>' +
-                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                              '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                               '                <div onclick="popup()">문자 전송하기</div>' +
                                               '            </div>' +
                                               '        </div>' +
@@ -561,7 +561,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>전라남도 여수시 주동1길 32 (주삼동, 여수시농업기술센터) 여수시 유기동물보호소</div>' +
                                              '                <div class="jibun ellipsis">(우) 1003-8 (지번) 원리 90</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -581,7 +581,7 @@ var positions = [
                                                 '            <div class="desc">' +
                                                 '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                                                 '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                                '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                                '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                                 '                <div onclick="popup()">문자 전송하기</div>' +
                                                 '            </div>' +
                                                 '        </div>' +
@@ -601,7 +601,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>충청북도 제천시 금성면 적성로8길 51 (금성면)</div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 동막리 994-2</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -621,7 +621,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>경상북도 문경시 중앙로 170 (흥덕동) 종합축산</div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -641,7 +641,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>울산광역시 남구 돋질로 385-1 (삼산동)</div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 삼산동 180-33 </div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -661,7 +661,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>전라남도 진도군 진도읍 성죽골길 30 (진도읍) 진도개축산과</div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 동외리 268-14</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -681,7 +681,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>전라북도 진안군 진안읍 예리길 36</div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 물곡리 1241</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -701,7 +701,7 @@ var positions = [
                                              '            <div class="desc">' +
                                              '                <div class="ellipsis" onclick=popup()>경상남도 진주시 집현면 신당길207번길 22 (집현면, 지역농업개발시설) </div>' +
                                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                                              '                <div onclick="popup()">문자 전송하기</div>' +
                                              '            </div>' +
                                              '        </div>' +
@@ -721,7 +721,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 창원시 진해구 웅천로 218 (성내동) 도시농업과 부지 내</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 성내동 205</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -741,7 +741,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>인천광역시 부평구 평천로 356 (갈산동)</div>' +
                              '                <div class="jibun ellipsis">(우) 59-5 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -761,7 +761,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 창원시 의창구 창이대로 71 (명서동, 창원시농업기술센터) 축산과</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -781,7 +781,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청남도 천안시 동남구 충절로 437 (삼룡동)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 삼룡동 146-28</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -801,7 +801,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 철원군 동송읍 장흥로 311</div>' +
                              '                <div class="jibun ellipsis">(우) 759 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -821,7 +821,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상북도 청도군 화양읍 청화3길 10 청도군 농업기술센터</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 범곡리 147</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -841,7 +841,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청남도 청양군 대치면 청산로 446-17 (대치면)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 수석리 341-1</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -861,7 +861,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라북도 남원시 죽항동 278번지</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -881,7 +881,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청남도 태안군 태안읍 남문리 504-6</div>' +
                              '                <div class="jibun ellipsis">(우) 504-6 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -901,7 +901,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청북도 보은군 보은읍 보은로 119-1 (보은읍)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -921,7 +921,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청북도 영동군 영동읍 계산로 54 (영동읍, 최종주동물병원)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -941,7 +941,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청북도 충주시 중앙탑면 일곱실길 70 (중앙탑면)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -961,7 +961,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>울산광역시 북구 신답로 26 (상안동, 홈플러스) 쿨펫동물병원 홈플러스 북구점</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 상안동 322-9</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -981,7 +981,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 태백시 문의재로 5 (통동)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1001,7 +1001,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 통영시 광도면 전두1길 9-8</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 노산리 251-34</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1021,7 +1021,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라남도 곡성군 곡성읍 군청로 50 보호소 주소 : 전남 곡성군 곡성읍 구원리 888</div>' +
                              '                <div class="jibun ellipsis">(우) 888 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1041,7 +1041,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라북도 전주시 완산구 삼천동1가 592-1</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1061,7 +1061,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라북도 전주시 덕진구 덕진동2가 송천중앙로 17 (덕진동2가)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1081,7 +1081,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 하남시 신평로 37 (덕풍동) 하남동물병원</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1101,7 +1101,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 하동군 적량면 한옥정길 90 (적량면) 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 동산리 1830</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1121,7 +1121,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>부산광역시 강서구 제도로 726 (강동동)</div>' +
                              '                <div class="jibun ellipsis">(우) 3223-26 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1141,7 +1141,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>전라남도 함평군 학교면 송산길 84 (학교면) 월산리 806-1</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 월산리 806-1</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1161,7 +1161,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37 </div>' +
                              '                <div class="jibun ellipsis">(우) 410-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1181,7 +1181,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 상수리 410-1</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1201,7 +1201,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37 (남면)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1221,7 +1221,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1241,7 +1241,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1261,7 +1261,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 410-1</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1281,7 +1281,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 양주시 남면 감악산로 63-37</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1301,7 +1301,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>서울특별시 송파구</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1321,7 +1321,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경기도 안산시 상록구 청곡길 50 (부곡동) 안산시 상록구 부곡동 231-5</div>' +
                              '                <div class="jibun ellipsis">(우) 231-5 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1341,7 +1341,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 함안군 가야읍 함안대로 755 </div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1361,7 +1361,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>경상남도 함양군 함양읍 함양남서로 996-76 (함양읍, 농업기술센터)</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1381,7 +1381,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1401,7 +1401,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1421,7 +1421,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1441,7 +1441,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1461,7 +1461,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1481,7 +1481,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1501,7 +1501,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1521,7 +1521,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1541,7 +1541,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1561,7 +1561,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +
@@ -1581,7 +1581,7 @@ var positions = [
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>강원도 양구군 국토정중앙면 삼팔선로 680 유기동물보호소</div>' +
                              '                <div class="jibun ellipsis">(우) 928-1 (지번) 원리 90</div>' +
-                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">010-2416-8138</a></div>' +
+                             '                <div><a href="http://localhost:8000/board/messageForm" target="_self" class="link">01024168138</a></div>' +
                              '                <div onclick="popup()">문자 전송하기</div>' +
                              '            </div>' +
                              '        </div>' +

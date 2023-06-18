@@ -1,5 +1,6 @@
 package com.cos.blog.controller;
 
+import com.cos.blog.service.UserService;
 import com.cos.blog.service.paymentService;
 import com.cos.blog.service.paymentService2;
 import net.nurigo.java_sdk.exceptions.CoolsmsException;
@@ -89,6 +90,9 @@ public class BoardController {
 
 	@GetMapping("/board/testSms")
 	public String testSms() { return "board/testSms";}
+
+	@GetMapping("/board/testSms2")
+	public String testSms2() { return "board/testSms2";}
 
 	//문자 인증
 	@PostMapping("/memberPhoneCheck")

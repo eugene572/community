@@ -51,6 +51,11 @@ public class UserController {
 		return "user/loginForm";
 	}
 
+	@GetMapping("/auth/testSms2")
+	public String testSms2() {
+		return "user/testSms2";
+	}
+
 
 	@JsonIgnoreProperties(ignoreUnknown=true)
 	@GetMapping("/auth/kakao/callback")

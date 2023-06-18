@@ -3,16 +3,6 @@
 <%@ include file="../layout/header.jsp"%>
 <head>
     <style>
-
-    #memberPhoneCheck2{
-        width: 130px;
-        height: 55px;
-        background-color: gold;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        float:right;
-    }
         * {
           margin: 0;
           padding: 0;
@@ -77,40 +67,18 @@
 </head>
 <body>
 <div class="form-group phoneCertifyDiv">
-	<%--<label class="inputTitle">휴대폰 번호</label><br>
+
 	<div class="phoneNum-formgroup">
-		<input th:if="${memberPhone != null}" type="text" name="memberPhone" class="phoneNum" readonly th:value="${memberPhone}">
+
 		<input type="text" name="memberPhone" class="phoneNum" >
 		<input type="button" id="memberPhoneCheck" class="btn memberPhoneBtn active" value="인증번호 전송">
 	</div>
-	--%>
 
-	<div class="phoneNum-formgroup">
-		<%--<input th:if="${memberPhone != null}" type="text" name="memberPhone" class="phoneNum" readonly th:value="${memberPhone}">--%>
-		<div>
-		<input type="text" required name="memberPhone2" class="phoneNum2" value="01024168138">
-		<label>보내는 사람</label>
-		<span></span>
-        </div>
-
-        <div>
-		<input type="text" required name="message" class="messageNum">
-		<label>내용</label>
-		<span></span>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-		<input type="button" id="memberPhoneCheck2" class="btn memberPhoneBtn active" value="메세지 전송">
-	</div>
-<br/>
-<br/>
-	<%--
 	<div class="phoneNum-formgroup" id="phoneCertifyDiv">
 		<input type="text" name="memberPhoneCertify" class="phoneNum">
 		<input type="button" id="certifyCheck" class="btn memberPhoneBtn" value="인증하기">
 	</div>
-	--%>
+
 </div>
 </body>
 <script type="text/javascript">
@@ -140,9 +108,9 @@
     			});
 
     		},
-    		error : function() {
-    			alert("에러")
-    		}
+    		 error : function() {
+                     			alert("에러")
+                     		}
     	});
     });
 

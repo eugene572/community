@@ -1,38 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%@ include file="../layout/header.jsp"%>
+<%@ include file="../layout/header2.jsp"%>
+<head>
 <style>
 button::placeholder {
   color: blue;
 }
 </style>
+</head>
+<body>
+
 <div class="container" >
-	<form >
+<form >
 		<div class="form-group" style="text-align: center;">
-			<%--<label for="username">아이디</label>--%>
 			<input style="display:block; margin: 0 auto; width:300px; height:50px;" type="text" class="form-control" placeholder="아이디" id="username">
 		</div>
-		
+
 		<div class="form-group" style="text-align: center;">
-			<%--<label for="password">비밀번호</label>--%>
 			<input style="display:block; margin: 0 auto; width:300px; height:50px;" type="password" class="form-control" placeholder="비밀번호" id="password">
 		</div>
-		
+
 		<div class="form-group" style="text-align: center;">
-			<%--<label for="email">이메일</label>--%>
 			<input style="display:block; margin: 0 auto; width:300px; height:50px;" type="email" class="form-control" placeholder="이메일" id="email">
 		</div>
-
-        <div class="form-group" style="text-align: center;">
-            <%--<input th:if="${memberPhone != null}" type="text" name="memberPhone" class="phoneNum" readonly th:value="${memberPhone}">--%>
-            <input type="text" style="display:block; margin: 0 auto; width:300px; height:50px;" placeholder="휴대폰 번호" name="memberPhone" class="phoneNum" >
-            <input type="button" id="memberPhoneCheck" style="margin-left: 180px; border-color: blue; background-color: white; color:blue; " class="btn memberPhoneBtn active" value="인증번호 전송">
-        </div>
-        <div class="form-group" style="text-align: center;" id="phoneCertifyDiv">
-            <input type="text" style="margin-left: 203px; margin: 0 auto; width:150px; height:38px;" name="memberPhoneCertify" placeholder="인증번호" class="phoneNum">
-            <input type="button" id="certifyCheck" style=" border:none; width:150px; background-color: #ffe100; " class="btn memberPhoneBtn" value="인증하기">
-        </div>
-
+		<div>
+		<button class="btn btn-dark" style="display:block; margin: 0 auto; width:300px; height:50px;" onclick="popup();">휴대폰 인증</button>
+		</div>
+<br/>
 	</form>
 
 	<div class="checkbox_group">
@@ -48,15 +42,22 @@ button::placeholder {
     <input type="checkbox" id="check_3" class="normal" style="margin-left: 403px; width:20px; height:20px;">
     <label for="check_3">[선택] 마케팅 수신 동의</label>
     </div>
-
+<br/>
 	<button id="btn-save" class="btn btn-dark" style="display:block; margin: 0 auto; width:300px; height:50px;">회원가입</button>
 
 </div>
 
+</body>
 <script src="/js/user.js"></script>
-<script>
+<script type="text/javascript">
 
- <%--휴대폰번호 인증번호 보내기 버튼 클릭 이벤트--%>
+    function popup(){
+      let options = "toolbar=no,scrollbars=no,resizable=yes,status=no,menubar=no,width=600, height=800, top=0,left=0";
+
+      window.open("http://localhost:8000/auth/testSms2","_blank", options);
+    }
+
+    <%--휴대폰번호 인증번호 보내기 버튼 클릭 이벤트--%>
     $('#memberPhoneCheck').click(function(){
 
     	var to = $('input[name="memberPhone"]').val();
@@ -81,11 +82,35 @@ button::placeholder {
     			});
 
     		},
-    		error : function() {
-    			alert("에러")
-    		}
+    		error:function(request,status,error){
+                    alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+                   }
     	});
     });
+
+    <%--휴대폰번호 인증번호 보내기 버튼 클릭 이벤트--%>
+        $('#memberPhoneCheck2').click(function(){
+
+        	var to = $('input[name="memberPhone2"]').val();
+        	var text = $('input[name="message"]').val();
+        	var allData = { "to": to, "text": text};
+
+        	$.ajax({
+        		url : "/memberPhoneCheck2",
+        		type : "POST",
+        		data : allData ,
+        		dataType : "json",
+        		success : function(data) {
+        			const checkNum = data;
+        			alert('checkNum:'+ checkNum);
+        			alert('메세지를 보냈습니다.');
+
+        		},
+        		error : function() {
+        			alert("에러")
+        		}
+        	});
+        });
 
 $(".checkbox_group").on("click", "#check_all", function () {
     $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
@@ -116,6 +141,5 @@ $('#btn-save').on("click", function() {
 
 
 </script>
-
 
 

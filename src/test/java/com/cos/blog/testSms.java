@@ -19,7 +19,7 @@ public class testSms {
 
         HashMap<String, String> params = new HashMap<String, String>();
         params.put("to", "010-2016-8138");
-        params.put("from", "010-2416-8138");          //사전에 사이트에서 번호를 인증하고 등록하여야 함
+        params.put("from", "01024168138");          //사전에 사이트에서 번호를 인증하고 등록하여야 함
         params.put("type", "SMS");
         params.put("text", "유진이 테스트");     //메시지 내용
         params.put("app_version", "test app 1.2");
