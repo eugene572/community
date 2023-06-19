@@ -2,6 +2,16 @@
 
 <%@ include file="../layout/header.jsp"%>
 
+<style>
+.links{
+text-align:center;
+margin-bottom:10px;
+}
+a{
+    color: #808080;
+    text-decoration: none;
+}
+</style>
 <div class="container" style="text-align: center;">
 	<form action="/auth/loginProc" method="post">
 		<div class="form-group" style="text-align: center;">
@@ -20,6 +30,9 @@
 
 		<a style="text-align: center;" href="https://kauth.kakao.com/oauth/authorize?client_id=42650e8bb8a5013a67136052a4291283&redirect_uri=http://localhost:8000/auth/kakao/callback&response_type=code"><img height = "50px" width = "300px" src="/image/kakao.png" /></a>
 	</form>
+	<div class="links">
+	<a href="/auth/findName" >아 이 디 &nbsp  찾 기</a>&nbsp | &nbsp<a href="/auth/joinForm">회 원 가 입</a>
+	</div>
 	
 </div>
 

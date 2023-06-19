@@ -55,6 +55,14 @@ public class UserController {
 	public String testSms2() {
 		return "user/testSms2";
 	}
+	@GetMapping("/auth/findName")
+	public String findName() {
+		return "user/findName";
+	}
+	@GetMapping("/auth/findIdResult")
+	public String findIdResult() {
+		return "user/findIdResult";
+	}
 
 
 	@JsonIgnoreProperties(ignoreUnknown=true)

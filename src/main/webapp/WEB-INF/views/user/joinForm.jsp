@@ -52,7 +52,7 @@ button::placeholder {
 <script type="text/javascript">
 
     function popup(){
-      let options = "toolbar=no,scrollbars=no,resizable=yes,status=no,menubar=no,width=600, height=800, top=0,left=0";
+      let options = "toolbar=no,scrollbars=no,resizable=yes,status=no,menubar=no,width=600, height=500, top=0,left=0";
 
       window.open("http://localhost:8000/auth/testSms2","_blank", options);
     }
