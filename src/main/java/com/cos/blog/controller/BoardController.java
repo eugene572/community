@@ -58,6 +58,11 @@ public class BoardController {
 		return "board/saveForm";
 	}
 
+	@GetMapping("/board/protect")
+	public String protect() {
+		return "board/protect";
+	}
+
 	@GetMapping("/board/location")
 	public String location() { return "board/location";}
 
@@ -70,6 +75,11 @@ public class BoardController {
 	@GetMapping("/board/messageForm2")
 	public String messageForm2() { return "board/messageForm2";}
 
+	@GetMapping("/board/completeBtn")
+	public String completeBtn() { return "board/completeBtn";}
+
+
+
 	@GetMapping("/board/sms")
 	public String sms() { return "board/sms";}
 
@@ -79,8 +89,6 @@ public class BoardController {
 //	@GetMapping("/board/calljson")
 //	public String calljson() { return "board/calljson";}
 
-	@RequestMapping(value="/messageSave", method=RequestMethod.POST)
-	public String messageSave() { return "board/messageSave";}
 
 	@RequestMapping(value="/board/smssend", method=RequestMethod.POST)
 	public String smssend() { return "board/smssend";}

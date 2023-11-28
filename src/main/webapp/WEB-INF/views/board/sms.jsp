@@ -79,7 +79,7 @@
             <br /> 장문(LMS) : 한번에 최대 2,000byte까지 전송할 수 있으며 1회 발송당 잔여건수 3건이 차감됩니다.
         </p>
         <br />받는 번호
-        <input type="text" name="rphone" value="010-2016-8138"> 예) 011-011-111 , '-' 포함해서 입력.
+        <input type="text" name="rphone" value="010-9417-8138"> 예) 011-011-111 , '-' 포함해서 입력.
         <br />이름삽입번호
         <input type="text" name="destination" value="" size=80> 예) 010-000-0000|홍길동
         <br /> 보내는 번호

@@ -3,17 +3,17 @@
 <%@ include file="../layout/header2.jsp"%>
 <head>
     <style>
-input{
-    padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 300px;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 15px;
-	}
+    input{
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        width: 300px;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 15px;
+        }
 
     .memberPhoneBtn{
       border: 0;
@@ -46,7 +46,6 @@ input{
 		<input type="text"  name="memberPhoneCertify" class="phoneNum" placeholder="인증번호를 입력하세요">
 		<input type="button" id="certifyCheck" style="text-align:center;" class="btn memberPhoneBtn" value="인증번호 확인">
 	</div>
-
 </div>
 </body>
 <script src="/js/user.js"></script>
@@ -55,8 +54,8 @@ input{
     <%--휴대폰번호 인증번호 보내기 버튼 클릭 이벤트--%>
     $('#memberPhoneCheck').click(function(){
 
-    alert('ㅋㄹ2');
     	var to = $('input[name="memberPhone"]').val();
+
     	$.ajax({
     		url : "/memberPhoneCheck",
     		type : "POST",
@@ -72,6 +71,7 @@ input{
     				const userNum = $('input[name="memberPhoneCertify"]').val();
     				if(checkNum == userNum){
     					alert('인증 성공하였습니다.');
+    					window.close();
     				}else {
     					alert('인증 실패하였습니다. 다시 입력해주세요.');
     				}
@@ -79,6 +79,8 @@ input{
 
     		},
     		error:function(request,status,error){
+
+    		        alert("안됨");
                     alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
            }
     	});

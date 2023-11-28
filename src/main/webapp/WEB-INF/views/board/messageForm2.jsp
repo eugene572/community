@@ -24,17 +24,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%="${principal.user.username}" %>
-${principal.user.username}
-내가 받은 쪽지함
 
+<p style="text-align:center; font-size: 20px; font-weight: bold;">${principal.user.username} 님의 받은쪽지함</p>
+<br/>
 <div class="container">
 
     <div class="card m-2">
     <div class="card-body">
-    <table class="table table-hover table-striped">
+    <table class="table">
 
-    <thead>
+    <thead class="thead-dark">
         <tr>
             <th width="50%" style="text-align:center;">내용</th>
             <th width="25%" style="text-align:center;">보낸 사람</th>
@@ -63,7 +62,7 @@ ${principal.user.username}
 
 					out.println("<td ");
 					out.println(" style=\"text-align:center;\">");
-					out.println(" <a href=\"/board/messageMain\">");
+					out.println(" <a style=\"color: black; text-decoration: none;\" href=\"/board/messageMain\">");
 					%>
 
                     <form action="messageMain">

@@ -40,11 +40,12 @@
 					<ul class="navbar-nav" style="float:right;">
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/saveForm">작성하기</a></li>
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/">소식보기</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:black;" href="/user/updateForm">회원정보</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:black;" href="/logout">로그아웃</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/auth/loginForm">로그인</a></li>
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/location">보호소 위치/시설</a></li>
 						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/messageMain">쪽지</a></li>
-						<li class="nav-item"><a class="nav-link" style="color:black;" href="/board/messageForm">자세히</a></li>
+						<li class="nav-item"><a class="nav-link" style="color:black;" href="/user/updateForm">회원정보</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:black;" href="/logout">로그아웃</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:black; margin-left: 800px;">${principal.user.username} 님, 안녕하세요</a></li>
 					</ul>
 
 				</c:otherwise>

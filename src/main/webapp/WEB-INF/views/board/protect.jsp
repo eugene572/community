@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<%@ include file="layout/header.jsp"%>
+<%@ include file="../layout/header.jsp"%>
 </head>
 <body>
 
@@ -20,25 +20,11 @@
 		    </thead>
 		    <tbody>
 		        <c:forEach var="board" items="${boards.content}">
-
-                <c:choose>
-                   <%-- <c:when test="${board.user.username == 'tyler'}">--%>
-                    <c:when test="${board.count == 0}">
-                    <tr>
-                        <td style="text-align:center;">${board.id}</td>
-                        <td><a style="text-decoration: none; color: black;" href="/board/${board.id}">${board.title}</td>
-                        <td style="text-align:center;">${board.user.username}</td>
-                    </tr>
-                    </c:when>
-                    <c:otherwise>
-                        <tr style="background-color:#E0EBEC;">
-                            <td style="text-align:center;">${board.id}</td>
-                            <td><a style="text-decoration: none; line-through; color: black;" href="/board/${board.id}">[완료] ${board.title}</td>
-                            <td style="text-align:center;">${board.user.username}</td>
-                        </tr>
-                    </c:otherwise>
-		        </c:choose>
-
+		        <tr>
+		            <td style="text-align:center;">${board.id}</td>
+		            <td><a style="text-decoration: none; color: black;" href="/board/${board.id}">${board.title}</td>
+		            <td style="text-align:center;">${board.user.username}</td>
+		        </tr>
 			    <%--<h4 class="card-title"><a style="text-decoration: none; color: black;"href="/board/${board.id}">${board.title}</h4>--%>
                 </c:forEach>
             </tbody>
@@ -56,7 +42,7 @@
   		<li class="page-item"><a class="page-link" href="?page=${boards.number-1}"><</a></li>
   	</c:otherwise>
   </c:choose>
-  
+
     <c:choose>
   	<c:when test="${boards.last}">
   		<li class="page-item disabled"><a class="page-link" href="?page=${boards.number+1}">></a></li>
@@ -65,9 +51,9 @@
   		<li class="page-item"><a class="page-link" href="?page=${boards.number+1}">></a></li>
   	</c:otherwise>
   </c:choose>
-  
+
 </ul>
-	
+
 
 </div>
 </body>

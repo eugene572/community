@@ -11,7 +11,7 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        float:right;
+        text-align:center;
     }
         * {
           margin: 0;
@@ -101,7 +101,7 @@
         <br/>
         <br/>
         <br/>
-		<input type="button" id="memberPhoneCheck2" class="btn memberPhoneBtn active" value="메세지 전송">
+		<input type="button" style="margin-left:200px;" id="memberPhoneCheck2" class="btn memberPhoneBtn active" value="메세지 전송">
 	</div>
 <br/>
 <br/>

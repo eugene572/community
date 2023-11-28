@@ -16,11 +16,17 @@
 %>
 
 <div class="container">
-	<button class="btn btn-dark float-right" onclick="history.back()" style="border:none; background-color:transparent;"><img height="15px" src="/image/menu.png" alt=""></button>
+	<button class="btn btn-dark float-right" onclick="history.back()" style="border:none; background-color:transparent;"><img height="18px" src="/image/menu.png" alt=""></button>
 
 	<c:if test="${board.user.id == principal.user.id}">
-		<a href="/board/${board.id}/updateForm" class="btn btn-dark float-right" style="border:none; background-color:transparent;"><img height="15px" src="/image/edit-button.png" alt=""></a>
-		<button id="btn-delete" class="btn btn-dark float-right" style="border:none; background-color:transparent;"><img height="15px" src="/image/bin.png" alt=""></button>
+		<a href="/board/${board.id}/updateForm" class="btn btn-dark float-right" style="border:none; background-color:transparent;"><img height="18px" src="/image/edit-button.png" alt=""></a>
+		<button id="btn-delete" class="btn btn-dark float-right" style="border:none; background-color:transparent;"><img height="18px" src="/image/bin.png" alt=""></button>
+
+		<form action="completeBtn">
+		    <input type="text" style="border:none; background-color:transparent; display:none;" name="testId" value="${board.id}"/>
+		    <button type="submit" class="btn btn-dark float-right" id="completeBtn" style="font-size: small; border: none; ">완료</button>
+		</form>
+
 	</c:if>
 	<br /> <br />
 	<div>
@@ -105,6 +111,10 @@
 
 <div>
     <div class="sns" style="height:40px;">
+        <div class="band" style="float:right;">
+        <a href="#n" onclick="fn_sendFB('band');return false;" class="band" target="_self" title="네이버밴드 새창열림">
+        <img style="cursor:pointer" height="40px" src="/image/band.png" alt=""></a>
+        </div>
         <div class="facebook" style=" float:right; ">
         <a href="#n" onclick="fn_sendFB('facebook');return false;" class="facebook" target="_self" title="페이스북 새창열림">
         <img style="cursor:pointer" height="40px" src="/image/facebook.png" alt=""></a>
@@ -112,10 +122,6 @@
         <div class="twitter" style="float:right; ">
         <a href="#n" onclick="fn_sendFB('twitter');return false;" class="twitter" target="_self" title="트위터 새창열림">
         <img style="cursor:pointer" height="40px" src="/image/twitter.png" alt=""></a>
-        </div>
-        <div class="band" style="float:right;">
-        <a href="#n" onclick="fn_sendFB('band');return false;" class="band" target="_self" title="네이버밴드 새창열림">
-        <img style="cursor:pointer" height="40px" src="/image/band.png" alt=""></a>
         </div>
     	<div class="kakaotalk" style="float:right;">
         <a href="#n" id="btnKakao" onclick="fn_sendFB('kakaotalk'); return false;" class="kakaotalk" target="_self" title="카카오톡 새창열림">
@@ -205,19 +211,26 @@ function fn_sendFB(sns) {
     else if($var == 1) var2 = 1;
 
     function changeImage() {
-        if ( var2 == 0 ) {
-            var2 = 1;
-            document.getElementById('image').src = "/image/heart1.png";
-            swal('','좋아요를 눌렀습니다.', 'success');
+
+
+        if("${board.user.username}" == "${principal.user.username}"){
+            alert("본인 글은 좋아요를 누를 수 없습니다.");
         }
-        else if(var2 == 1){
-            var2 = 0;
-            document.getElementById('image').src = "/image/heart2.png";
-            swal('', '좋아요를 취소했습니다.', 'error');
+        else{
+            if ( var2 == 0 ) {
+                var2 = 1;
+                document.getElementById('image').src = "/image/heart1.png";
+                swal('','좋아요를 눌렀습니다.', 'success');
+            }
+            else if(var2 == 1){
+                var2 = 0;
+                document.getElementById('image').src = "/image/heart2.png";
+                swal('', '좋아요를 취소했습니다.', 'error');
+            }
         }
     }
     function showPopup(){
-        window.open("messageMain?test=${board.user.username}","팝업 테스트","width=600, height=900, top=100, left=50");
+        window.open("messageMain?test=${board.user.username}","팝업 테스트","width=767, height=900, top=100, left=50");
     }
 
 </script>

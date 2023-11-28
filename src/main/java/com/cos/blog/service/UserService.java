@@ -74,8 +74,8 @@ public class UserService {
 	}
 
 	public static String PhoneNumberCheck(String to) throws CoolsmsException {
-		String api_key = "NCSOKOQKD8Z8ZJ6Y";
-		String api_secret = "6BNZSOJUZBKBMXDFCWSQSEENGKM1GE3J";
+		String api_key = "NCSTNGWOBCZE2C8D";
+		String api_secret = "ZWOZ5EKE9PKJRSU43DTHE39PBJ0XAJPV";
 		Message coolsms = new Message(api_key, api_secret);
 
 
@@ -100,8 +100,8 @@ public class UserService {
 	}
 
 	public static String PhoneNumberCheck2(String to, String text) throws CoolsmsException {
-		String api_key = "NCSOKOQKD8Z8ZJ6Y";
-		String api_secret = "6BNZSOJUZBKBMXDFCWSQSEENGKM1GE3J";
+		String api_key = "NCSTNGWOBCZE2C8D";
+		String api_secret = "ZWOZ5EKE9PKJRSU43DTHE39PBJ0XAJPV";
 		Message coolsms = new Message(api_key, api_secret);
 
 

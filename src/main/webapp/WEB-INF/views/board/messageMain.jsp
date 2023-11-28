@@ -15,9 +15,9 @@
 </head>
 <style>
 input {
-  width: 300px;
-  height: 32px;
-  font-size: 15px;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
   border: 0;
   border-radius: 15px;
   outline: none;
@@ -26,9 +26,9 @@ input {
 }
 
 textarea {
-  width: 300px;
+  width: 500px;
   height: 300px;
-  font-size: 15px;
+  font-size: 20px;
   border: 0;
   border-radius: 15px;
   outline: none;
@@ -36,14 +36,25 @@ textarea {
   padding-top:10px;
   background-color: rgb(233, 233, 233);
 }
-button {
-    padding-left: 10px;
-    padding-top:10px;
-}
+
 table {
     border-collapse: separate;
     border-spacing:30px 10px;
   }
+
+  .message{
+            border: 0;
+            outline: none;
+            font-size: 15px;
+            margin: 5px;
+            background: black;
+            color: white;
+
+            cursor: pointer;
+            border-radius: 10px;
+            width:100px;
+
+          }
 
 </style>
 <body>
@@ -53,17 +64,18 @@ table {
 %>
 
     <form action="messageSave">
-   <button type="submit" value="test" style="float:right;" formaction = "messageForm"/>받은 쪽지함</button>
-   <button type="submit" value="test" style="float:right;" formaction = "messageForm2"/>보낸 쪽지함</button>
-
+    <div style="display:inline-block">
+   <div style=""><button type="submit" value="test" class="message" style="  text-align:center; margin-left:1300px;" formaction = "messageForm"/>보낸 쪽지함</button></div>
+  <div style=""><button type="submit" value="test" class="message" style=" text-align:center; margin-left:1300px;" formaction = "messageForm2"/>받은 쪽지함</button></div>
+</div>
     <table style="margin:auto;" class="a">
     <tr>
-        <td><label for="name">보내는 사람</label></td>
-        <td><input type="text" required id="name" placeholder="보내는사람 이름" name="sendName" value="${principal.user.username }"/></td>
+        <td><label for="name" style="font-size: 20px;">보내는 사람</label></td>
+        <td><input type="text"  required id="name" placeholder="보내는사람 이름" name="sendName" value="${principal.user.username }"/></td>
     </tr>
     <tr>
     <td>
-        <label for="email">받는 사람 </label></td>
+        <label for="email" style="font-size: 20px;">받는 사람 </label></td>
         <td><input type="text" id="email" placeholder="받는 사람" name="receiveEmail" value="<%=test %>"/>
     </td>
     </tr>
@@ -71,11 +83,11 @@ table {
         <td class="space" colspan="10"></td>
     </tr>
     <tr>
-        <td style="vertical-align : top;"><label for="message">메시지  </label></td>
-        <td><textarea id="message" rows="6" name="message"></textarea></td>
+        <td style="vertical-align : top;"><label for="message" style="font-size: 20px;">메시지  </label></td>
+        <td><textarea id="message"  rows="6" name="message"></textarea></td>
     </tr>
     </table>
-           <button type="submit" class="btn btn-dark" value="send message"/>전송</button>
+           <button type="submit" style="margin-left:650px; font-size: 20px;" class="btn btn-dark" value="send message"/>전송</button>
 
    </form>
 </body>

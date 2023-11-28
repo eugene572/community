@@ -44,7 +44,7 @@
     var container = document.getElementById('map');
     var options = {
     	center: new kakao.maps.LatLng(37.3402538780, 126.8700052143),
-    	level: 11
+    	level: 12
     };
 
     var map = new kakao.maps.Map(container, options);
@@ -896,7 +896,7 @@ var positions = [
                              '        </div>' +
                              '        <div class="body">' +
                              '            <div class="img">' +
-                             '                <img src="/image/0618.jpg" width="73" height="70">' +
+                             '                <img src="/image/06182.jpg" width="73" height="70">' +
                              '           </div>' +
                              '            <div class="desc">' +
                              '                <div class="ellipsis" onclick=popup()>충청북도 보은군 보은읍 보은로 119-1 (보은읍)</div>' +

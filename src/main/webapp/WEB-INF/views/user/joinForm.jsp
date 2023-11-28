@@ -12,6 +12,7 @@ button::placeholder {
 
 <div class="container" >
 <form >
+
 		<div class="form-group" style="text-align: center;">
 			<input style="display:block; margin: 0 auto; width:300px; height:50px;" type="text" class="form-control" placeholder="아이디" id="username">
 		</div>
@@ -23,11 +24,13 @@ button::placeholder {
 		<div class="form-group" style="text-align: center;">
 			<input style="display:block; margin: 0 auto; width:300px; height:50px;" type="email" class="form-control" placeholder="이메일" id="email">
 		</div>
-		<div>
-		<button class="btn btn-dark" style="display:block; margin: 0 auto; width:300px; height:50px;" onclick="popup();">휴대폰 인증</button>
-		</div>
-<br/>
+
+
 	</form>
+	<div>
+    		<button style="border-color: black; font-weight : bold; border-width:2px;  display:block; margin: 0 auto; width:300px; height:50px;" onclick="popup();">휴대폰 인증</button>
+    		</div>
+    		<br/>
 
 	<div class="checkbox_group">
 	<input type="checkbox" id="check_all" style="margin-left: 403px; width:20px; height:20px;">
@@ -141,5 +144,3 @@ $('#btn-save').on("click", function() {
 
 
 </script>
-
-

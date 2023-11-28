@@ -19,6 +19,7 @@
             <th>이름</th>
             <th>아이디</th>
             <th>암호</th>--%>
+
 <%
     request.setCharacterEncoding("UTF-8");
 
@@ -58,6 +59,7 @@
 
 <script>
 alert("쪽지를 보냈습니다.");
+window.close();
 
 location.href='messageMain';
 </script>
